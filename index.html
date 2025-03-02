@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Table</title>
+    <style>
+        .table {
+            border: 1px solid;
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .table th {
+            font-weight: bold;
+            padding: 5px;
+            background: #dddddd;
+            border: 1px solid;
+        }
+
+        .table td {
+            padding: 5px 10px;
+            border: 1px solid;
+            text-align: left;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background: #fff;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background: #eeeeee;
+        }
+    </style>
 </head>
 
 <body>
-    <table border="1">
+    <table class="table">
         <thead>
             <tr>
                 <th>ID</th>

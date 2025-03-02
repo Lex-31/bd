@@ -23,3 +23,8 @@ services:
       - PGDATABASE=mydatabase
       - PGPASSWORD=mypassword
       - PGPORT=5432
+
+# docker-compose up --build  создать контейнер
+# docker-compose start  запустить контейнер
+# docker-compose stop  остановить контейнер
+# docker-compose down  удалить контейнер

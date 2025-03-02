@@ -7,7 +7,7 @@ app.use(cors());
 
 const pool = new Pool({
     user: 'myuser',
-    host: 'localhost', // Используйте имя сервиса базы данных из docker-compose
+    host: 'db', // Используйте имя сервиса базы данных из docker-compose - db
     database: 'mydatabase',
     password: 'mypassword',
     port: 5432,
