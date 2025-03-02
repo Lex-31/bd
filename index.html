@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Table</title>
     <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm 1cm 1cm 2cm;
+            }
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .a4-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            border: 5px solid transparent;
+        }
+
+
         .table {
             border: 1px solid;
             border-collapse: collapse;
@@ -38,17 +59,19 @@
 </head>
 
 <body>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-        </thead>
-        <tbody id="table-body">
-        </tbody>
-    </table>
+    <div class="a4-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
 
     <script>
         fetch('http://localhost:3000/test')
